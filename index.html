@@ -1,0 +1,1312 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Include DOM Navigator library -->
+    <script src="https://cdn.jsdelivr.net/npm/dom-navigator/dist/domNavigator.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js"></script> 
+    <title>RCU Website</title>
+</head>
+<body>
+
+    <!---------------------------- TITLE ------------------------------------->
+
+     <!-- Container div with text and image -->
+     <div class="section active left-aligned">
+        <div class="content-container">
+            <div class="text-section">
+                <!-- text content goes here -->
+                
+                <div class="special-title-container">
+                    <span class="static-text">Problem of the </span>
+                    <span class="rotating-text">Rupee</span>
+                </div>
+                
+                <p>
+                   Analyzing the Interconnected Intellectual Networks of B.R. Ambedkar's <br> <i>Problem of the Rupee</i>
+                </p>
+
+                <p>
+                    Durga Rajiv Chaloli & Isha Karim
+                </p>
+            </div>
+            <div class="image-section">
+                <img class="image" src="AmbedkarTitle.png" alt="Photo of BR Ambedkar">
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------NOTE ON METHOD--------------------------------->
+    <div class="section active left-aligned" id="section1">
+        <div class="title-container">
+            <h1 class="animated-text">Note on Method</h1>
+        </div>
+        <div class="body-container">
+            <p>
+                Project research method: Ambedkar is often recognized as a radical anti-caste thinker, an active constitutional 
+                lawyer, and the father of India's constitution. He indeed is all of this and more, but recognizing Ambedkar's 
+                pedagogical formation as political economist is often overlooked, and his anti-caste thought is used as a way to 
+                pin him down as a “colonial stooge.” We use Ambedkar's 1923 LSE thesis <i>Problem of the Rupee</i>, as a way to situate 
+                Ambedkar as a political economist and at the same time to revitalize his anti-colonial thought. We then identify the 
+                <i>Problem of the Rupee</i> (and Ambedkar's political economic thought) as a work that is situated at the nexus of 
+                overlapping and diverse intellectual networks and modes of thinking—spheres inhabited by the colonial bureaucrat as the 
+                political economist, by the economic feminist engaging with questions of surplus, and by the early-20th century US 
+                university intellectual embedded in the question of the eminent domain.
+
+            </p>
+        </div>
+    </div>
+
+     <!---------------------------NOTE ON METHOD--------------------------------->
+    <div class="section active left-aligned" id="section2">
+        <div class="title-container">
+            <h1 class="animated-text">Note on Method</h1>
+        </div>
+        <div class="body-container">
+            <p>
+                The project of annotation resembles the excavation of an artefact, wherein we uncover new and surprising 
+                nformation and connections as we (re)read. These modes of presentation (static slides and interactive website) 
+                were produced with the following questions in mind: Who gets to annotate? Who gets to read these texts? As public 
+                pedagogues, we simultaneously engage in both knowledge dissemination and selection. How can we blur the lines separating the “public” and the “pedagogue,” and make an act as personal, intimate, and solitary as close-reading and annotation a one that is inherently shared, collective, and interactive?
+                We do this by offering a bi-dimensional, multimodal, and immersive reading and annotational experience. 
+                We have a website interface that gamifies, simplifies, and makes interactive the process of reading through and annotating a 
+                dense treatise like PoR. We also have this slide deck which is a static, more detailed version of our annotations, that a 
+                more interested reader can go through.
+
+            </p>
+        </div>
+    </div>
+
+    <!-----------------------------MAIN PEOPLE BIOS--------------------------------->
+
+    <div class="section active center-justified">
+        <div class="image-container">
+            <img src="Edwin_RA_Seligman_portrait.jpg" alt="Image of ERA Seligman" onclick="location.href = 'seligman-bio.html';" class="responsive-image" style="cursor: pointer;"> 
+            <img src="Kelley_Florence square.jpg" alt="Image of Florence Kelley" onclick="location.href = 'fk-bio.html';" class="responsive-image" style="cursor: pointer;">
+            <img src="Dr._Bhimrao_Ambedkar.jpg" alt="Image of BR Ambedkar" onclick="location.href = 'ambedkar-bio.html';" class="responsive-image" style="cursor: pointer;">
+            <img src="Gilman.png" alt="Image of Charlotte Perkins Gilman" onclick="location.href = 'gilman-bio.html';" class="responsive-image" style="cursor: pointer;">
+        </div>        
+    </div>
+
+    <!-----------------------------ROADMAP/OUTLINE------------------------------------>
+
+    <div class="section active center-justified">
+        <div class="content-container">
+            <div class="text-section">
+                <h2 class="animated-text">Road<br>Map</h2>
+            </div>
+            <div class="text-section">
+                <p>
+                    1. What “immediate” and “alternative” intellectual networks did <i>Problem of the Rupee</i> engage with? 
+                </p>
+            </div>
+            <div class="text-section">
+                    2. Who/what does <i>Problem of the Rupee</i> have discursive affinity with [a]?
+            </div>
+            <div class="text-section">
+                    3. Which others does <i>Problem of the Rupee</i> enter through 
+                    the colonial logics of (in)visibility and exchange [b] & [c]?
+            </div>
+        </div>
+    </div>
+
+    <!-----------------------------A: IMMEDIATE NETWORKS TITLE------------------------------------>
+    <div class="section active center-aligned">
+        <h1 class="animated-text">[A]: Immediate Network</h1>
+    </div>
+
+    <!------------------finish-----------A: ATLANTIC CROSSINGS INTRO------------------------------------>
+
+    <div class="section active left-aligned">
+        <h1 class="animated-text"> <i>Atlantic Crossings</i> and Transnational Economies of Radicality</h1>
+        <p>
+            “On both sides of the Atlantic a new world of coal and iron, factory towns and sprawling urban agglomerations, 
+            accumulated capital, massed wage labor, and new forms of misery was swiftly coming into being. [...] 
+             
+            <span class="callout" data-content="Britain & US as nexus of atlantic crossings">
+                <span class="annotate">
+                    The birthplace of this new world was Britain. </span> 
+                <span class="callout-text"></span>
+            </span>
+            [...] The nations of the North Atlantic economy vied for markets 
+            with fierce intensity, manipulating trade and tariff policies or grabbing for 
+            <span class="callout" data-content="colonial markets develop transnational socio-economic politics">
+                <span class="annotate">
+                    captive colonial markets </span> 
+                <span class="callout-text"></span>
+            </span>
+            in an effort to 
+            leapfrog past each other in industrial primacy. Still, to focus on the nation-state is to distort the fundamental 
+            forces at work. Slipping across national borders with the fluidity of quicksilver, investment capital and management and 
+            roduction techniques diffused through the avenues of North Atlantic trade. By the late nineteenth century,
+            what struck those who traversed the industrial regions of the 
+            
+                <span class="annotate">
+                    Old and New Worlds </span> 
+            
+            was not their difference 
+            but their extraordinary sameness."
+
+            
+        </p>
+    </div>
+     <!-- Left-aligned section -->
+     <div class="section active center-aligned">
+        <h2>
+            But, <i>Whose</i> Crossings, <i>Whose</i> Radicality, <i>Whose</i> Economy?
+        </h2>
+    </div>
+
+    <!--------------------finish-----------------A: LETTER------------------------------------------->
+    <div class="section active center-justified">
+    <div class="content-container">
+        <div class="text-section">
+          <h1 class="animated-text">Theorizing from the Margins</h1>
+          <p>
+            Well, what of the subaltern political economist, making similar Atlantic Crossings, but salvaging the 
+            colonial periphery from the shadows of the North Atlantic “epistemic core” and theorizing about extractive 
+            colonial economy from the margins?
+        </p>
+        </div>
+        <div class="image-section">
+          <div class="image-container" id="imageContainer">
+            <img class="image" src="Durga-A2.png" alt="Box 5, Folder “1914,” Uncatalogued Correspondence E. R. A. Seligman Collection, CU RBML
+            ">
+            <div class="text-overlay" id="textOverlay">
+                <p>
+                    
+                </p>
+                <p>Seligman supporting Ambedkar's continued economics studies: 
+                    “After having exhausted all the material on this side [the US], it would be imperative for him to 
+                    spend at least a season in london.”</p>
+            </div> 
+          </div>
+        </div>
+    </div>
+</div>
+    
+    <!-------------------------------------A.2 TITLE CARD------------------------------------------->
+
+    <div class="section active center-justified">
+        <div class="content-container">
+            <div class="text-section">
+                <h1 class="animated-text">Theorizing from the Margins</h1>
+                <p>
+                    Ambedkar, through his 1923 Problem of the Rupee which he writes after “crossing over” 
+                    from Columbia to LSE, is taking on the protean “thinker-practitioners” John Maynard Keynes, 
+                    Fred J. Atkinson, David Miller Barbour, and others who are all colonial bureaucrats/
+                    administrators in the British Indian colonial periphery and political economic knowledge 
+                    producers in the colonial metropole (London).
+                </p>
+            </div>
+            <div class="text-section">
+                Ambedkar uses their theory, engages with the data they “produce” and use, and subverts their narratives of 
+                colonial “underdevelopment.” Therefore, situating Ambedkar as a political economist writing on colonial monetary 
+                policy through PoR allows us to recognize him as a/the subaltern political economist who is an interlocutor 
+                and knowledge-producer theorizing from the shadows/margins of the North Atlantic crossing.
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-------------------------------------A.2 BIOS------------------------------------------->
+
+    <div class="section active traditional">
+        <div class="center-title-container">
+            <h3>
+                What intellectual networks do colonial bureacrats form that Ambedkar enters and critiques?
+            </h3>
+            <div class="centering-container">
+                <p>
+                    It is important to identify how these colonial bureaucrats were theorizing colonial 
+                    monetary policy and “underdevelopment” as they shuttled between the subaltern periphery and the colonial metropole.
+                </p>
+            </div>
+
+        </div>
+        <div class="image-container">
+            <img src="Barbour.png" alt="Image of David Miller Barbour" onclick="location.href = 'barbour.html';" class="responsive-image" style="cursor: pointer;"> 
+            <img src="Dr._Bhimrao_Ambedkar.jpg" alt="Image of BR Ambedkar" onclick="location.href = 'ambedkar-bio.html';" class="responsive-image" style="cursor: pointer;">
+            <img src="Keynes.png" alt="Image of John Maynard Keynes" onclick="location.href = 'keynes.html';" class="responsive-image" style="cursor: pointer;">
+            <!-- Add more images as needed -->
+        </div>        
+    </div>
+
+    <!-------------------------------------A.2 BARBOUR------------------------------------------->
+    <!-- Container div with text and image -->
+    <div class="section active left-aligned">
+        <div class="content-container">
+            <div class="text-section">
+                <!-- text content goes here -->
+                <h1 class="animated-text">Barbour as Ambedkar's Interlocutor</h1>
+                <p>
+                    "The United States were urged to abandon the silver, and no consideration appears to have been given
+                    to the difficulties that such a measure must bring on India.
+                    Some writers were indeed good enough to suggest that while the United States and 
+                    <span class="callout" data-content="colonial gaze of “underdevelopment">
+                        <span class="annotate">all the great and 
+                            wealthy nations of the world</span> 
+                        <span class="callout-text"></span>
+                    </span>
+                    might select silver as their monetary standard: as I shall show hereafter, any such settlement
+                    of the question was 
+                    impracticable, and if it could have been achieved it would have proved neither satisfactory  
+                    nor permanent. 
+                    Gentlemen, we are accustomed to pride ourselves on the fact that we are an Imperial people, 
+                    and with Imperial instincts. It seems to me that there was very little of the <span class="annotate">Imperial spirit</span> 
+                    shown in the way in which we dealth either with the Currency 
+                    Question as a whole, or with that portion of it which more immediately concerned India."    
+                </p>
+            </div>
+        <div class="image-section">
+            <img class="image" src="Barbour-work.png" alt="The Currency Question from an Indian Point of View: Address by Sir David Barbour in Drapers’ Hall London (1894)">
+        </div>
+    </div>
+    </div>
+
+    <!-------------------------------------A.2 SELIGMAN CORRESPONDENCE------------------------------------------->
+    <div class="section active left-aligned">
+        <div class="content-container">
+            <div class="text-section">
+                <!-- text content goes here -->
+                <h1 class="animated-text">Seligman as Ambedkar's Mediator</h1>
+                <p>
+                    This letter is from the publisher of Edwin Cannan's (Ambedkar's PoR-preface writer, LSE prof's) book "The Economic Outlook," 
+                    and it claims that Seligman and Columbia appear to have a known interest in Cannan's work. The fact that Seligman is 
+                    taking interest in Cannan's work in 1913—when Ambedkar is studying at CU and certainly thinking about his eventual 
+                    thesis—shows that through Seligman, Ambedkar seems to have been begun engaging with the economists he takes issue with eventually in PoR.
+                </p>
+
+                <p>
+                    "The Economic Outlook" is a compilation of essays that were initially written to create a general "manual" on Political Economy that also engaged with 
+                    concepts of socialism. Importantly, there are three chapters titled "The practical utility of economic science," that is immediately followed by "colonial preference," 
+                    and then eventually, 
+                    "the economic ideal and its application to countries or nations." This is the book referenced in the letter.
+
+                </p>
+            </div>
+        <div class="image-section">
+            <img class="image" src="Seligman-Mediator.png" alt="Box 36 “Columbia, 1911-1930,” Folder “Columbia 1913-1917 (unarranged and incomplete),” Arranged Files E. R. A. Seligman Collection, CU RBML
+            ">
+        </div>
+    </div>
+    </div>
+
+    <!-----------------------------A3:  TITLE------------------------------------>
+    <div class="section active center-aligned">
+        <h1 class="animated-text">Theoretical Subversion and the Subaltern Episteme</h1>
+        <p>
+            How does Ambedkar—through PoR—take on and subvert the narrative of colonial monetary “underdevelopment” crafted by the the
+             protean colonial bureaucrats/political economists (Keynes, Barbour, Atkinson, etc.)?
+
+        </p>
+    </div>
+    <!-------------------------------------A.3 CONCEPTUAL QUESTIONS------------------------------------------->
+    <!-- Container div with text and image -->
+    <div class="section active left-aligned">
+        <div class="content-container">
+            <div class="text-section">
+                <!-- text content goes here -->
+                <h1 class="animated-text">Conceptual Contestations</h1>
+                <p>
+
+                     "On the theoretical side there is no book but that of <span class="annotate">Professor Keynes</span> 
+                     which makes any attempt to examine its scientific basis.
+                     But the conclusions he has arrived at are in 
+                     
+                     <span class="callout" data-content="BRA contra to Keynes & colonial bureaucratic economic episteme">
+                        <span class="annotate">sharp conflict</span> 
+                        <span class="callout-text"></span>
+                    </span>
+                     
+                     with those of mine. Our differences extend to almost every 
+                     proposition he has advanced in favour of the exchange standard. This difference proceeds from the fundamental fact, 
+                     which seems to be quite overlooked by Professor Keynes, that 
+                     
+                     <span class="callout" data-content="imposition of gold exchange standard creates an artificial and permanent devaluation of the rupee.">
+                        <span class="annotate">nothing will stabilise the rupee</span> 
+                        <span class="callout-text"></span>
+                    </span>
+                     
+                      unless we stabilise its 
+                     general purchasing power. That the exchange standard does not do. That standard concerns itself only with symptoms and does 
+                     not go to the disease: indeed, on my showing, if anything, it aggravates the disease." - Ambedkar, <i>Problem of the Rupee</i> vi.
+                </p>
+            </div>
+            <div class="image-section">
+                <img class="image" src="PoR.png" alt="Problem of the Rupee: Its Origin and Solutions">
+            </div>
+       
+    </div>
+    </div>
+
+     <!-------------------------------------A.3 MORE CONCEPTUAL QUESTIONS------------------------------------------->
+    
+     <div class="section active center-aligned">
+        <div class="content-container">
+            <div class="text-section">
+                <!-- text content goes here -->
+                <h1 class="animated-text">More Conceptual Contestations</h1>
+                <p>
+                    "The present Indian system has close affinities with other currency systems in some of the great 
+                    European countries and elsewhere. To get an idea as to what these affinities are, or rather were, 
+                    we must look into Chapter II of Mr. Keynes's interesting treatise on <span class="annotate">Indian Currency and Finance.</span>
+                    In that treatise of his, Mr. Keynes has attempted to show that there is a 
+                    <span class="annotate">fundamental likeness</span>
+                    between
+                    the operations of the <span class="annotate">Indian currency system</span> and the operations as they used to be of the central banks 
+                    of some of the important countries of <span class="annotate">Europe.</span> He found that it used to be the practice of these banks 
+                </p>
+            </div>
+            <div class="text-section">
+                <!-- text content goes here -->
+                <p>
+                    to hold foreign bills of exchange for the purpose of making remittances  to foreign countries. Between the 
+                    selling of such foreign bills and the selling of reverse councils by the Government of India he observed a closefundamental likeness, inasmuch as both involved. But, as Prof. Kemmerer points out, it is difficult to see what likeness there is between the Government of 
+                    India selling reverse councils and the European banks holding foreign bills. 
+                    <span class="annotate">Far from being alike,</span>
+                    the two practices must be regarded as the opposite of each other.[...] Under the 
+                     practice of holding foreign bills to protect the money market, the central bank sells its foreign bills,
+                     when money at home is relatively <span class="annotate">scarce</span>, as means of 
+                </p>
+            </div>
+            <!-- Add more text sections as needed -->
+            <div class="text-section">
+                <h1 class="animated-text"> </h1>
+                <!-- text content goes here -->
+                <p>
+                 
+                    securing gold for importation or preventing its 
+                     exportation. In the former case, the sale of drafts takes the place of an exportation of gold, and the 
+                     resulting withdrawal of local money from circulation is in essentials an exportation ; in the latter case 
+                     the sale of the drafts abroad is part of a process for securing gold for importation, or for preventing its 
+                     exportation.The Indian currency system therefore bears no analogy to the European currency systems, as Mr. Keynes would 
+                    have us believe. But if a parallel is needed, then the true parallel to the Indian system of currency is 
+                    that system which prevailed in England during the Bank Suspension period (1797-1821)." - Ambedkar, <i>Problem of the Rupee</i> 172-3.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------------------A.3 VIDEO------------------------------------------->
+
+    <div class="section active center-aligned">
+        <h1 class="animated-text">Monetary Policy Disambiguation Video</h1>
+        <video width="640" height="360" controls>
+            <source src="RCU - PoR Concept Disambiguation Video (1).mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    
+
+    <!-----------------------------B: ALTERNATIVE NETWORKS TITLE------------------------------------>
+    <div class="section active center-aligned">
+        <h1 class="animated-text">[B] Alternative Networks</h1>
+    </div>
+
+    <!-----------------------------B: ALTERNATIVE ROAD MAP------------------------------------>
+    <div class="section active center-aligned">
+        <div class="content-container">
+            <div class="text-section">
+                <h1>German Socialism & the "Woman Question"</h1>
+                <!-- text content goes here -->
+                <p>
+                    Who are the 
+                    <span class="callout" data-content="Charlotte Perkins Gilman, Florence Kelley">
+                        <span class="bannotate">economic feminists?</span> 
+                        <span class="callout-text"></span>
+                    </span>
+                    How do they operate in larger frameworks of 
+                    pedagogical, professional, and political power? 
+                </p>
+            </div>
+
+            <div class="text-section">
+                <h1>Florence Kelley: Among Ambedkar's Counterparts?</h1>
+                <!-- text content goes here -->
+                <p>
+                    How are Kelley's modes of knowledge production, economic and social ideology, and intellectual creed 
+                    a counterpart for Ambedkar in Progressive Era America?
+                </p>
+            </div>
+
+            <div class="text-section">
+                <h1>Within and Outside The "Race Question"</h1>
+                <!-- text content goes here -->
+                <p>
+                    How do the 
+                    <span class="callout" data-content="Mary White Ovington, Anna Julia Cooper">
+                        <span class="bannotate">economic feminists</span> 
+                        <span class="callout-text"></span>
+                    </span>
+                    grapple with race? What new modes of scholarship and insight do they contribute to
+                    Black movements for enfranchisement?
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------------------------B: BIOS Socialism Pre-History------------------------------------>
+    <div class="section active traditional">
+        <h1>German & American Socialism: Cross-Atlantic Solidarities & Divergences</h1>
+        <h3>
+            Who are some key corresponders and mentors of the economic feminists? What from their own intellectual work creed
+            has influenced the positionalities of these women?
+        </h3>
+        <div class="image-container">
+            <img src="Engels.png" alt="Image of Frederick Engels" onclick="location.href = 'engels-bio.html';" class="responsive-image" style="cursor: pointer;"> 
+            <img src="Ely.png" alt="Image of Richard T. Ely" onclick="location.href = 'ely-bio.html';" class="responsive-image" style="cursor: pointer;">
+            <img src="Ward.png" alt="Image of Lester F. Ward" onclick="location.href = 'ward-bio.html';" class="responsive-image" style="cursor: pointer;">
+            <img src="Laurence-Gronlund.png" alt="Image of Cooperative Commonwealth by Laurence Gronlund" onclick="location.href = 'gronlund.html';" class="responsive-image" style="cursor: pointer;"> 
+        </div>        
+    </div>
+
+    <!-----------------------------B: INTRO TO ECO FEMS TITLE------------------------------------>
+    <div class="section active center-aligned">
+        <h1 class="animated-text">Economic Feminists "Remodel" Socialist Theory From the Margins: </h1>
+        <p>
+            How do the economic feminists “remodel” these Socialist terms and theories 
+            both under and sans the influence of their predominantly male mentors and contemporaries? 
+        </p>
+        <p>
+            <i>Terms: Exchange, exchange rate, surplus, overproduction, (labor) expropriation, invisible/visible labor, (labor & sexual) market, means of production, mechanisms of exchange
+            </i>
+        </p>
+    </div>
+
+
+     <!--------------------------------------B: CPG Annotation: W+E, Andocracy------------------------------------>
+      <!-- Container div with text and image -->
+        <div class="section active left-aligned">
+        <div class="content-container">
+            <div class="text-section">
+                <!-- text content goes here -->
+                <h1 class="animated-text">Charlotte Perkins Gilman, <i>Women and Economics</i></h1>
+
+                <p>
+                    The pressure under which this is done is an economic one. The girl must marry: else how to live? 
+                    The prospective husband...is the 
+                        <span class="bannotate">market, the demand.</span> 
+                        <span class="callout-text"></span>
+                    
+                    She is 
+                    <span class="callout" data-content="surplus woman">
+                        <span class="bannotate">the supply.</span> 
+                        <span class="callout-text"></span>
+                    </span>
+                    [...] The mother serves her child's economic advantage by preparing her for the market.  
+                    It is plainly traceable to our 
+                    <span class="callout" data-content="mode of exchange">
+                        <span class="bannotate"> sexuo-economic relation.</span> 
+                        <span class="callout-text"></span>
+                    </span>
+                
+                    The labor of women in the house, certainly, enables men to 
+                    
+                     <span class="callout" data-content="invisiblized labor">
+                        <span class="bannotate"> produce more wealth than they otherwise could;</span> 
+                        <span class="callout-text"></span>
+                    </span>
+                    and in this way women are economic factors.
+                    The labor which the wife performs in the household is given as part of her functional duty, 
+                    not as <span class="bannotate"> employment.</span> 
+                </p>
+            </div>
+            <div class="image-section">
+                <img class="image" src="SurplusWoman.png" alt="Charlotte Perkins Gilman Lecture Series Advertisement">
+            </div>
+       
+        </div>
+    </div>
+
+     <!--------------------------------------B: CPG, SURPLUS WOMEN, POR------------------------------------>
+     <!-- Container div with text and image -->
+     <div class="section active left-aligned">
+        <div class="content-container">
+            <div class="text-section">
+                <!-- text content goes here -->
+                <h1 class="animated-text">Charlotte Perkins Gilman, <i>Our Androcentric Culture</i></h1>
+                    <p>
+                        "[Women's] labor is neither 
+                        
+                        <span class="callout" data-content="man & woman parallel colony/metropole as forms of unequal exchange">
+                            <span class="bannotate"> given nor taken as a factor in economic exchange.</span> 
+                            <span class="callout-text"></span>
+                        </span>
+
+                        In treating of an economic exchange, asking what return in goods or labor women make for the goods and labor 
+                        given to them, either to the race collectively or to their husbands individually, what payment women make for their clothes and shoes and furniture and food and shelter, 
+                        we are told that the duties and services of the mother entitle her to support.
+    
+
+                        <span class="callout" data-content="industrial market made by women">
+                            <span class="bannotate">Industry, at its base, is a feminine function.</span> 
+                            <span class="callout-text"></span>
+                        </span>
+                
+                       The <span class="bannotate">surplus energy</span> of the mother does not manifest itself in noise, 
+                        or combat, or display, but in productive industry. Because of her mother-power 
+                        she became the
+
+
+                        <span class="callout" data-content="woman as the original means and origin of production">
+                            <span class="bannotate">first inventor and laborer;</span> 
+                            <span class="callout-text"></span>
+                        </span>
+                        
+                        being in truth the mother of all industry as well as all people. [...] Man's entrance upon industry is late and reluctant; as will be shown later in treating his effect on economics. In this field of family life, his effect was as follows:
+
+                        Establishing the proprietary family at an age when the industry was primitive and domestic; and thereafter 
+                        confining the woman solely to the domestic area, he thereby confined her to primitive industry. The domestic industries, 
+                        in the hands of women, constitute a survival of our remotest past. Such work was "woman's work" as was all the work then known; 
+                        such work is still considered woman's work because they have been prevented from doing any other.
+                        The term "domestic industry" does not define a certain kind of labor, but a certain <span class="bannotate">grade of labor."</span> 
+                    </p>
+            </div>
+            <div class="image-section">
+                <img class="image" src="testimg.png" alt="Charlotte Perkins Gilman Lecture Series Advertisement">
+            </div>
+       
+        </div>
+    </div>
+
+      <!-----------------------------B: INTRO TO ECO FEMS TITLE------------------------------------>
+      <div class="section active center-aligned">
+        <h1 class="animated-text">The Economic Feminism of Florence Kelley: An Investigation </h1>
+        <p>
+            Against this backdrop of nascent American Socialism and women's emancipation, Florence Kelley becomes a key cross-Atlantic 
+            nd cross-class knowledge producer and mediator.
+        </p>
+    </div>
+
+     <!--------------------------------------B: Florence Kelley Intro------------------------------------>
+    <div class="section active left-justified">
+        <div id="container2">
+            <div id="text-container2">
+               
+                <h1 class="animated-text">Florence Kelley: Nascent Thinker</h1>
+                <p>
+                    Kelley responds to a letter from Susan B. Anthony, who urges Kelley to encourage
+                    <span class="callout" data-content="Radical Republican, abolitionist, founder of Republican Party">
+                        <span class="bannotate">Kelley's father</span> 
+                        <span class="callout-text"></span>
+                    </span>
+                    to give more attention to "Womens' Emancipation." 
+                    Kelley argues her father is devoted to the cause in Pennysylvania, where "neither men nor women support him."
+                    Kelley cites her father as inspiration to her plans to devote herself to the "best interests of the working women of America." 
+                </p>
+            </div>
+            <div id="image-container2">
+                <img class="image" src="fk-sba.png" alt= "Letter from Susan B. Anthony to Florence Kelley, NYPL: Florence Kelley Papers: Box 1" onclick="openBook()">
+            </div>
+            <div id="new-text-container2">
+                <p>
+                    The Kelley's have a long legacy of reform in America. <br> They fought in 
+                    <span class="callout" data-content="Kelley's as colonists and colonized?">
+                        <span class="bannotate">the Revolutionary War,</span> 
+                        <span class="callout-text"></span>
+                    </span>
+                    <br>
+                    and many of Kelley's great-aunts and grandmothers were among the 
+                    <span class="callout" data-content="Kelley is raised in the faith">
+                        <span class="bannotate">earliest American abolitionists.</span> 
+                        <span class="callout-text"></span>
+                    </span>
+                    In <i>Notes of Sixty Years</i>, she renews her steadfast belief in Quaker ethics and cites the religion
+                    as incredibly formative to her future social work.
+                    <br>
+
+                    Florence Kelley attends
+                    <span class="callout" data-content="founder Ezra Cornell - 'any person, any study'">
+                        <span class="bannotate">Cornell University</span> 
+                        <span class="callout-text"></span>
+                    </span> and writes her thesis on disadvantaged children. 
+
+                    She is refused admission to the law degree at the University of Pennysylvania due to her gender,
+                    and instead attends the  University of Zurich, the first European university to grant degrees to women, and joins 
+                   a student Socialist group.
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+
+     <!-----------------------------B: FK AND ENGELS 1------------------------------------>
+     <!-- Container div with text and image -->
+     <div class="section active left-aligned">
+        <div class="content-container">
+            <div class="text-section">
+                <!-- text content goes here -->
+                <h1 class="animated-text">Engels & Kelley Correspond: Forging Cross-Atlantic Socialist Networks & the Exchange of Ideas [1]
+                </h1>
+                <p>
+                    Florence Kelley argues that the rise of the Socialist movement is 'so sudden' that it has an 'urgent' 
+                    'need of <span class="bannotate">suitable</span>  literature,'indicating the <span class="bannotate">urgency</span> of translation work. She calls 
+                    the American political machine corrupt with its lack of 'literature,' 'unenlightened leaders,' and 
+                    'capitalist press.' She then describes to Engels the 'organizing' movement of American trusts and 
+                    determines the American bourgeois as without 'want of <span class="bannotate">class consciousness.</span>' 
+                    According to her, this 'arouses further the class consciousness of the workers' although
+                     they remain unenlightened insofar as the 'best of our literature' is not available to the working 
+                     lass of America. Kelley laments the absence of 'scientific literature' in America, alluding  to her 
+                     social work collecting <span class="bannotate">economic data</span> related to American women's and child labor. 
+
+
+                </p>
+            </div>
+            <div class="image-section">
+                <img class="image" src="fk-engels.png" alt="Letter from Florence Kelley to Frederick Engels">
+            </div>
+       
+        </div>
+    </div>
+
+     <!-----------------------------B: FK AND ENGELS 2------------------------------------>
+     <!-- Container div with text and image -->
+     <div class="section active left-aligned">
+        <div class="content-container">
+            <div class="text-section">
+                <!-- text content goes here -->
+                <h1 class="animated-text">Engels & Kelley Correspond: Forging Cross-Atlantic Socialist Networks & the Exchange of Ideas [2]
+                </h1>
+                <p>
+                    Engels lends considerable influence to  Kelley and her intellectual creed/methodology. Engels'
+                     description of England's advanced industrial capacity (taking the case of the industrial hubs Liverpool and Manchester),
+                      expansive proletariat, and undercurrent of class conflict along the axis of labor and wage strike a deep chord in Kelley's 
+                      understanding of and ultimately contributions to American Socialism. In almost all her future social and economic work, 
+                      Kelley will emulate the methodology adopted by Engels in Condition, of empirical data collection & organization as 
+                      evidence for capitalism's disastrous excesses.
+
+                </p>
+            </div>
+            <div class="image-section">
+                <img class="image" src="engels-condition.png" alt="Condition of the English Working class in 1844 by Frederick Engels">
+            </div>
+       
+        </div>
+    </div>
+
+    <!-----------------------------B: FK and TRANSLATION------------------------------------>
+    <div class="section active center-aligned">
+        <h1 class="animated-text">Florence Kelley as Translator & Knowledge-Producer</h1>
+        <h3>Kelley spends much of her time in Europe working on translation of famed "German Socialists." <br>
+            Why does Kelley undertake this project? <br> To Kelley, what do her translations offer to the American Socialist movement? 
+            How do the works that she translates influence her intellectual creed, and place her in conversation with Ambedkar?
+        </h3>
+    </div>
+
+    <!--------------------------------------B: FK + translation------------------------------------>
+      <!-- Container div with text and image -->
+      <div class="section active left-aligned">
+        <div class="content-container">
+            <div class="text-section">
+                <!-- text content goes here -->
+                <h1 class="animated-text">Florence Kelley - May Thorne Lewis Correspondence (1885-1888)</h1>
+                <p>
+                    Kelley spends much of her time working on her translation of a <span class="callout" data-content="Engels' Condition of Working Class">
+                        <span class="bannotate">"German Socialist"</span> 
+                        <span class="callout-text"></span>
+                    </span> and 
+                    the importance of the translation work to expand the "revolutionary" capacities of  
+
+                    <span class="callout" data-content="translation builds cross-Atlantic solidarities">
+                        <span class="bannotate">Americans and Europeans.</span> 
+                        <span class="callout-text"></span>
+                    </span> 
+            
+                    
+                    In these letters, Kelley writes that "socialism is not dynamite warfare and the mightiest 
+                    <span class="callout" data-content="translation = revolutions">
+                        <span class="bannotate">revolutions</span> 
+                        <span class="callout-text"></span>
+                    </span> are peaceful ones."
+       
+
+                    Kelley writes more to Lewis about her translation work and the burgeoning Socialist movement in America. 
+                    She writes of the advances of social democracy in Switzerland and its elevated democratic character as compared to 
+                    America (labor legislation, unionization, women's emancipation). Kelley extensively follows Socialist periodicals in America and Europe and criticizes the deliberate "dilutions" of Socialist thought by university intellectuals 
+                    and the 
+
+                    <span class="bannotate">perversions</span> 
+                    
+                    of English translation of German works, where 'blind continue to lead the blind.' She believes such translations are
+                    dishonest and further cripple America's Socialist movement.  
+                </p>
+                
+            </div>
+            <div class="image-section">
+                <img class="image" src="fk-mtl.png" alt="Charlotte Perkins Gilman Lecture Series Advertisement">
+            </div>
+       
+        </div>
+    </div>
+
+    <!-----------------------------B: KELLEY & MARX ---------------------------->
+    <div class="section active left-aligned">
+        <h1 class="animated-text">Kelley, Marx, and Ambedkar: What is a National Economy?</h1>
+        <h3>
+            With a preface by Engels, Kelley publishes an English translation of Karl Marx's <i>Free trade: an address delivered <br> before the Democratic 
+            Association of Brussels, Belgium, January 9, 1848.</i> As a translator, Kelley injects herself in <span class="bannotate">cross-Atlantic and international</span> conversations around social democracy,
+            underdevelopment in the British Commonwealth, and <span class="bannotate">capitalist and colonial</span> fiscal and monetary policy.
+            <br>
+        </h3>
+    </div>
+
+    <!-----------------------------B: KELLEY & MARX ---------------------------->
+    <div class="section active left-aligned">
+        <h1 class="animated-text"><i>Problem of the Rupee</i> and <i>Free Trade</i>: What constitutes unequal exchange?</h1>
+        <p>
+            How does Problem of the Rupee (1923) engage with Marx's <i>Free Trade</i> (1848) and Engels' <i>Condition</i> (1844)?
+             Can Kelley and her translations be cast as the mediating link between <i>Problem of the Rupee</i> and the Socialist texts 
+            that inspired Ambedkar?
+        </p>
+             
+        
+    </div>
+
+     <!-----------------------------B: KELLEY & AMBEDKAR: Money as a Medium of Exchange ---------------------------->
+     <div class="section active left-aligned">
+        <div class="content-container">
+            <div class="text-section">
+               
+                <p> 
+
+                    "The explanation is that the actual exchange rates correspond to the purchasing power  <span class="callout" data-content="unequal exchange">
+                        <span class="annotate">parities</span> 
+                        <span class="callout-text"></span>
+                    </span> of two 
+                    currencies not with regard to all commodities but with regard to some only. In this connection it is better 
+                    to re-state the doctrine of the  <span class="annotate">relation</span> of the purchasing power parities to exchange rates with the necessary
+                     qualification. [...]the actual exchange rates are related to purchasing power parities of the two currencies 
+                     with regard to such commodities only as are internationally traded. To assume that the <span class="annotate">actual</span> exchange rate 
+                     is an <span class="annotate">exact</span> index of the purchasing power parity of the two currencies with regard to all the commodities 
+                     is to suppose that the variations in [pg 253] the purchasing power of a currency over commodities which 
+                     are traded and which are 
+                     <span class="callout" data-content="unequal exchange rates = parity">
+                        <span class="annotate">not traded are the same.</span> 
+                        <span class="callout-text"></span>
+                    </span>
+                      [...] If this is true, then, although the 
+                      <span class="callout" data-content="manipulated parity b/w rupee & sterling">
+                        <span class="annotate">maintenance of 
+                            the exchange standard</span> 
+                        <span class="callout-text"></span>
+                    </span>  does imply a purchasing power parity of the rupee with gold, it is not a purchasing 
+                     power parity of the two currencies with respect to all the commodities." - Ambedkar, Problem of the Rupee
+                    
+
+                  
+                </p>
+            </div>
+
+            <div class="text-section">
+
+                "There is only one little difficulty in this, namely that the workman, before he exchanges his franc for 
+                other commodities, has first exchanged his labor for the <span class="callout" data-content="unequal exchange rates = parity">
+                    <span class="bannotate">money as medium of exchange</span> 
+                    <span class="callout-text"></span>
+                </span> of the capitalist. [...] If in this exchange; 
+                he always received the said franc while the price of all other commodities fell, he would always be the 
+                gainer by such a bargain. The difficulty does not lie in proving that, the price of all commodities falling, 
+                more commodities can be bought for the same sum of money. Economists always take the price of labor at the 
+                <span class="callout" data-content="w.r.t. all commodities">
+                    <span class="bannotate">moment</span> 
+                    <span class="callout-text"></span>
+                </span> of its exchange; with other commodities, and altogether ignore the moment at which labor accomplishes 
+                its own exchange; with capital. [...]  So long as you let the <span class="bannotate">relation</span> of wage-labor to capital exist, 
+                no matter how favorable the conditions under which you accomplish the exchange; of commodities, there will 
+                always be a class which exploits and a class which is exploited.” - Marx, Free Trade
+
+
+
+            </div>
+            
+        </div>
+    </div>
+
+    <!-----------------------------B: KELLEY & AMBEDKAR SIDE BY SIDE ---------------------------->
+    <div class="section active left-aligned">
+        <div class="content-container">
+            <div class="text-section">
+               
+                <p> 
+                    "Not only had the trade of India been increasing, but the nature of her industries was also at the same time 
+                    undergoing a profound change. Prior to 1870 India and England were, so to say, 
+                    <span class="callout" data-content="colony as neither foreign nor domestic economy">
+                        <span class="annotate">non-competing groups.</span> 
+                        <span class="callout-text"></span>
+                    </span>
+                    Owing to 
+                    the <span class="annotate">protectionist policy</span>  of the Navigation Laws, and owing also to the 
+                    substitution of man by machinery in 
+                    the field of production, India had become exclusively an agricultural and a raw-material-producing country, while 
+                    England had transformed herself into a country which devoted all her energy and her resources to the manufacturing of 
+                    
+                    <span class="callout" data-content="expropriation of raw material in colonial market">
+                        <span class="annotate">raw materials imported from abroad</span> 
+                        <span class="callout-text"></span>
+                    </span>
+                    into finished goods. [...] Along with this increase of resources the Government of India also exercised the virtue of economy in the 
+                    cost of administration. For the first time in its history the Government turned to the 
+                    alternative of 
+
+                        <span class="annotate">employing the comparatively cheaper agency of the natives</span> 
+                     of the country in 
+                    place of the imported Englishmen. [...] India, as was to be 
+                    expected, hardly offered any market, the people being too poor and their savings too scanty to furnish a modicum of the 
+                    required capital outlay. Like all Governments of poor peoples, the Government of India had therefore to turn to 
+                    wealthier countries who had 
+                    <span class="callout" data-content="unequal exchange">
+                        <span class="annotate">surplus capital to lend. </span> 
+                        <span class="callout-text"></span>
+                    </span>
+                    All these countries unfortunately happened to be on the gold standard. " - Ambedkar, <i>Problem of the Rupee</i>
+                </p>
+            </div>
+
+            <div class="text-section">
+
+                "And, as if tariff-protection; were not sufficient, the wars against the French Revolution helped to secure to 
+                England the 
+                monopoly of the new industrial methods. For more than twenty years English men-of-war cut off the 
+                industrial rivals of England from 
+                <span class="callout" data-content="colony as site of economic extraction">
+                    <span class="bannotate">their respective colonial markets,</span> 
+                    <span class="callout-text"></span>
+                </span>
+                 while they forcibly opened these markets to 
+                English commerce. The secession of the South American colonies from the rule of their European mother-countries,
+                 the conquest by England of all French and Dutch colonies worth having, 
+                 
+                 <span class="bannotate">the progressive subjugation of India,</span> 
+                 turned the people of all these immense territories into <span class="bannotate">customers for English goods</span>. England thus supplemented 
+                 the protection; she practised at home, by the free trade she <span class="bannotate">forced</span> upon her possible customers abroad; and, 
+                 thanks to this happy mixture of both systems, at the end of the wars, in 1815, she found herself, with regard to 
+                 all important branches of industry in possession of the <span class="bannotate">virtual monopoly</span> of the trade of the world" - Engels, in a preface to Marx's <i>Free Trade</i> as translated by Kelley
+
+
+            </div>
+            
+        </div>
+    </div>
+
+     <!-----------------------------B: MARX & AMBEDKAR SIDE BY SIDE ---------------------------->
+    <div class="section active left-aligned">
+        <div class="content-container">
+            <div class="text-section">
+                <p> 
+                    "By enabling people to 
+
+                    <span class="callout" data-content="unequal exchange markets lower prices">
+                        <span class="annotate">buy foreign goods with foreign currency</span> 
+                        <span class="callout-text"></span>
+                    </span>
+                    obtained at a cheaper price the 
+                    peg virtually raises foreign prices more to the level of the home price so that if the exchange is stable 
+                    it is not because there is a peg, but because the price-levels in the two countries have reached a new 
+                    equilibrium. Essentially the exchange is stable because it is an 
+                    <span class="callout" data-content="underdevelopment caused by corrupted exchange rate">
+                        <span class="annotate">artificial purchasing-power parity.</span> 
+                        <span class="callout-text"></span>
+                    </span>
+                     Whether it will continue to be so 
+                    depends upon the movements in the home prices. If the home prices rise more than the rise brought about by the peg in the foreign prices 
+                    the <span class="annotate">mechanism</span>  must break. [...]
+                    In omitting to advert to that condition the Indian currency contradicts what is best in that Report of the Irish Committee.
+                    The reason why Mr. Lindsay paid no attention to the question of limitation in setting up his exchange standard is largely that, 
+                    [...], he was <span class="annotate">profoundly ignorant</span> of the true doctrine regarding the value of a currency." - Ambedkar, <i>Problem of the Rupee</i>
+                </p>
+            </div>
+
+            <div class="text-section">
+
+                "The system of protection;," says Marx," "was an 
+
+                <span class="callout" data-content="mechanism of inequality/underdevelopment = artificial">
+                    <span class="bannotate">artificial means of manufacturing manufacturers, </span> 
+                    <span class="callout-text"></span>
+                </span>
+                
+                of expropriating individual laborers, of capitalizing the national means of production and subsistence, and of forcibly 
+                abbreviating the transition from the medieval to the modern mode of production." [...]
+                Protection
+               is a plan for <span class="bannotate">artificially manufacturing manufacturers, </span> 
+                     and therefore also a plan for 
+                 manufacturing wage laborers. You cannot breed; the one without breeding the other. The wage-laborer everywhere follows 
+                in the footsteps of the manufacturer" - Engels, in a preface to Marx's <i>Free Trade</i> as translated by Kelley
+
+            </div>
+            
+        </div>
+    </div>
+
+     <!-----------------------------B: ENGELS & AMBEDKAR SIDE BY SIDE ---------------------------->
+     <div class="section active left-aligned">
+        <div class="content-container">
+            <div class="text-section">
+                <p> 
+                    "By enabling people to 
+
+                    <span class="callout" data-content="unequal exchange markets lower prices">
+                        <span class="annotate">buy foreign goods with foreign currency</span> 
+                        <span class="callout-text"></span>
+                    </span>
+                    obtained at a cheaper price the 
+                    peg virtually raises foreign prices more to the level of the home price so that if the exchange is stable 
+                    it is not because there is a peg, but because the price-levels in the two countries have reached a new 
+                    equilibrium. Essentially the exchange is stable because it is an 
+                    <span class="callout" data-content="underdevelopment caused by corrupted exchange rate">
+                        <span class="annotate">artificial purchasing-power parity.</span> 
+                        <span class="callout-text"></span>
+                    </span>
+                     Whether it will continue to be so 
+                    depends upon the movements in the home prices. If the home prices rise more than the rise brought about by the peg in the foreign prices 
+                    the <span class="annotate">mechanism</span>  must break. [...]
+                    In omitting to advert to that condition the Indian currency contradicts what is best in that Report of the Irish Committee.
+                    The reason why Mr. Lindsay paid no attention to the question of limitation in setting up his exchange standard is largely that, 
+                    [...], he was <span class="annotate">profoundly ignorant</span> of the true doctrine regarding the value of a currency." - Ambedkar, <i>Problem of the Rupee</i>
+                </p>
+            </div>
+
+            <div class="text-section">
+
+                "The revival of trade, after the crisis of 1847, was the dawn of a new industrial epoch. The 
+                repeal of the Corn Laws and the financial reforms subsequent thereon gave to English industry and 
+                commerce all the elbow-room they had asked for. [...] The colonial markets developed at an increasing 
+                rate their capacity for absorbing English manufactured goods. [..]Above all, the United States - then, c
+                ommercially speaking, a mere colonial market, but by far the biggest of them all - underwent an 
+                economic development astounding even for that rapidly progressive country. [...] 
+                This world-market, at first, was composed of a number of chiefly or entirely agricultural 
+                countries grouped around one manufacturing centre - England which consumed the greater part of their 
+                surplus raw produce, and supplied them in return with the greater part of their requirements in 
+                manufactured articles.” - Engels, <i>Condition of the English Working Class</i>
+
+
+            </div>
+            
+        </div>
+    </div>
+
+
+     <!--------------------------------------B.3: INTRO------------------------------------>
+     <!-- Container div with text and image -->
+     <div class="section active left-aligned">
+        <div class="content-container">
+            <div class="text-section">
+                <!-- text content goes here -->
+                <h1 class="animated-text">The 'Negro Question' and Economic Feminists
+                </h1>
+                <p>
+                    
+                    Thusfar, economic feminists have primarily engaged with questions of women, children, and the 
+                    unequal valuation of their labor as it manifests in <span class="bannotate">wage slavery</span>
+                     and abysmal working conditions.
+                    We have seen how Ambedkar enters these conversations by virtue of a shared lexicon of ideas, 
+                    terms, and theories. Although not an explicitly distinctive feature of <i>Problem of the Rupee</i>, 
+                    a large corpus of Ambedkar's work dedicates itself to <span class="bannotate">caste</span> as a complex and trans-acting form of 
+                    social stratification. Given the intellectual and professional focus of the economic feminists in 
+                    America, how does <span class="bannotate">racial stratification,</span> discussed foremostly between Black and white people, figure 
+                    in the work of the Ambedkar's “counterparts?” Do they similarly grapple with questions of social 
+                    stratification beyond and including gender? Where do their practices diverge from Ambedkar's? How does this reveal the limits or 
+                    lack thereof in their positionalities?
+
+                </p>
+            </div>
+            <div class="image-section">
+                <img class="image" src="venn-removebg-preview.png" alt="Venn Diagram Schematic between Labor, Race, Woman.">
+            </div>
+       
+        </div>
+    </div>
+
+    <!--------------------------------------B.3: OVINGTON------------------------------------>
+     <!-- Container div with text and image -->
+     <div class="section active left-aligned">
+        <div class="content-container">
+            <div class="text-section">
+                <!-- text content goes here -->
+                <h1 class="animated-text">Early 20th Century Labor Politics and Women's Emancipation Brings the 'Negro Question' to White Women Social Workers
+                </h1>
+                <p>
+                    Mary White Ovington helps establish the Greenpoint Settlement House in NY, where she is 
+                    deeply involved with civil rights and women's suffrage. She joins the Socialist Party in 1905.
+
+                    In 1909, Ovington joins with W.E.B du Bois, Ida B. Wells, John Dewey, Jane Addams, and 
+                    Florence Kelley to form the <span class="bannotate">NAACP</span> and serves as its first executive secretary. 
+
+                    In 1911, she publishes <i>Half a Man: The Status of the Negro in New York City</i> and describes 
+                    the status of the “Negro” in New York City by examining the <span class="bannotate">economic and social</span> conditions, 
+                    engaging with anthropological and ethnographic theories/methodologies to counter the 
+                    prejudice that Black Americans were “inferior” and underscore the “burden” 
+                    of racial segregation on Black communities. 
+
+                    In <span class="bannotate">"The Colored Woman as Breadwinner,"</span> Ovington specifically differentiates the socio-economic 
+                    status of the “Negro laboring woman” from the “white laboring woman,” due to the “different 
+                    occupational opporutnities” in “white and colored neighborhoods,” thus deeply interrogating the 
+                    1. intersections of labor, race, and sex and 2. the futile gains of (white) women's 
+                    emancipation for Black women 
+
+                </p>
+            </div>
+            <div class="image-section">
+                <img class="image" src="half-a-man.png" alt="Half a Man by Mary White Ovington">
+            </div>
+       
+        </div>
+    </div>
+
+    <!--------------------------------------B.3: RACE AS [1]------------------------------------>
+     <!-- Container div with text and image -->
+     <div class="section active left-aligned">
+        <div class="content-container">
+            <div class="text-section">
+                <!-- text content goes here -->
+                <h1 class="animated-text">Race as a Trans-acting Form of Social, Economic, and Sexual Stratification
+                </h1>
+                <p>
+                    Kelley receives a letter from USC professor Josiah Morse in March 1917, after Kelley become 
+                    actively involved with the NAACP. Morse writes to Kelley to request more time with her to "discuss 
+                    the Negro question." He disagrees with Kelley that the South cannot be "put in the same category as 
+                    Russia." He then draws a multiple contrasting points between Southern lynchings and 
+                    <span class="callout" data-content="cross-Atlantic comparisons of social/racial violence">
+                        <span class="bannotate">Russian pogroms,</span> 
+                        <span class="callout-text"></span>
+                    </span>: 
+                    rural vs. urban spaces, spur of the moment vs. premeditated violence, accusation of crime (as leading 
+                    to lynching) vs. the absence of that practice in pograms, etc. Morse asks Kelley whether it is possible 
+                    to improve the relationship between the "two races." He answers (hinting that Kelley agrees as well) 
+                    that "pedagogy" or "statesmanship" is the solution. He then goes on to write that Black folk must 
+                    cultivate character in order to work "with" white Southerners. 
+                </p>
+            </div>
+            <div class="image-section">
+                <img class="image" src="morse-fk.png" alt="Letter to Florence Kelley">
+            </div>
+       
+        </div>
+    </div>
+
+     <!--------------------------------------B.3: RACE AS [2]------------------------------------>
+     <!-- Container div with text and image -->
+     <div class="section active left-aligned">
+        <div class="content-container">
+            <div class="text-section">
+                <!-- text content goes here -->
+                <h1 class="animated-text">Race as a Trans-acting Form of Social, Economic, and Sexual Stratification
+                </h1>
+                <p>
+                    Daisly L. Bishop writes to Kelley asking for any work that Kelley may have for her. 
+                    She writes admiringly of Kelley's work for Black folk in the United States. Bishop says 
+                    that although she works in politics for "white Republicans," she and other Black folk are 
+                    misused as political "tools" for political organizing efforts and fundraising but are left 
+                    abandoned post-election season. She writes that she is "sick" of this, and asks Kelley for 
+                    help in securing work in the East so she can leave her current position in the South, which she hates. 
+
+                </p>
+                <p>
+                    In an unrelated letter to social worker Lavinia Dock, Kelley takes issue with the Woman's Party 
+                    definition of gender equaltiy, which argues that equality of rights is to give women of each group 
+                    (professional, business, Negro, Japanese) the rights of the men of their corresponding group 
+                    (she emphasizes that this definition sounds like “caste, not equality”). This indicates that Kelley was 
+                    likely (perhaps due to her relationship with du Bois and the caste school of race relations) engaging with texts
+                    and theories investigating the relationships between race and caste as forms/types of inequality.
+ 
+                </p>
+            </div>
+            <div class="image-section">
+                <img class="image" src="bishop-fk.png" alt="Letter to Florence Kelley">
+            </div>
+       
+        </div>
+    </div>
+
+    <!--------------------------------------B.3: RACE AS [3]------------------------------------>
+     <!-- Container div with text and image -->
+     <div class="section active left-aligned">
+        <div class="content-container">
+            <div class="text-section">
+                <!-- text content goes here -->
+                <h1 class="animated-text">Kelley's "Negro Children as Future Workers" & Unequal Educational "Exchange" by Race
+                </h1>
+                <p>
+                    An early draft of Kelley's essay “The Negro Children as Future Workers” (1914). 
+                    Kelley writes that the future of “colored children” and the “future product of their labor” 
+                    are of dire concern for the “whole republic.” Kelley is thinking about the intersections of race 
+                    in the labor question, and the “responsibility” of white social workers to Black communities.
+
+                    Kelley notes only in the marginalia of this draft that racial inequality is an “artificial mechanism” 
+                    of segregation that enhances the “power of whiteness.”
+
+                </p>
+            </div>
+            <div class="image-section">
+                <img class="image" src="future-laborers.png" alt="Letter to Florence Kelley">
+            </div>
+       
+        </div>
+    </div>
+
+     <!-----------------------------B FINAL TITAL SUMMARY---------------------------->
+     
+    <div class="section active left-aligned" id="section1">
+        <div class="title-container">
+            <h1 class="animated-text">Ambedkar's <br> Cross-Atlantic <br> Alternative Networks</h1>
+        </div>
+        <div class="body-container">
+            <p>
+            Economic feminists such as Kelley, Gilman, Ovington, and Cooper; Socialists like Engels, Gronlund, 
+            and Marx; and Ambedkar are deeply investigating questions of exchange, exchange rate, labor, and 
+            value and determine that unequal relationships between man & woman, Black & white, laborer & capitalist, 
+            and colony & metropole occur when the exchange between these groups is artificially manipulated by 
+            means of distorted exchange rates.
+
+            </p>
+        </div>
+    </div>
+
+
+    <!-----------------------------C: Hybrid Case Study------------------------------------>
+    <div class="section active center-aligned">
+        <h1 class="animated-text">[C] Hybrid Case Study</h1>
+    </div>
+
+    <!--------------------------------------C.1------------------------------------>
+     <!-- Container div with text and image -->
+     <div class="section active left-aligned">
+        <div class="content-container">
+            <div class="text-section">
+                <!-- text content goes here -->
+                <h1 class="animated-text">Railways: US-Britain-India
+                </h1>
+                <p>
+                    Seligman writes to David Miller Barbour 
+                    (one of the colonial bureaucratic political economists with whom Ambedkar is in contention) in 1914: 
+                    “there has been a lot of discussion in the United States, not indeed of the precise question that you 
+                    raise, but of an analogous question. The problem with us is not govt disposing of any of its properties 
+                    but the reverse one, of the govt buying up private enterprise.”
+                </p>
+                <p>
+                    Seligman seems to insinuate that Barbour writes to him about the question of the “valuation” of 
+                    property that the government has disposed. Assessing this—knowing that Barbour was a colonial 
+                    bureaucrat in India who was deeply involved in the currency question—it would be an educated guess 
+                    to say that Barbour was referring to the question of valuing demonetized Indian currency.
+                    But, a further stretch of our historical imagination—considering that Seligman is talking about the way 
+                    the colonial Indian govt is looking to dispose (demonetize) while the US govt is analogously buying up
+                     private enterprises—makes one wonder if the reason why Seligman sees an analogy of valuation is because
+                      of a common line of connection: the railway question.
+                </p>
+            </div>
+            <div class="image-section">
+                <img class="image" src="durga-c1.png" alt="Letter, ERA Seligman">
+            </div>
+       
+        </div>
+    </div>
+
+    <!-------------------------------------C.3 MORE CONCEPTUAL QUESTIONS------------------------------------------->
+    
+    <div class="section active center-aligned">
+        <div class="content-container">
+            <div class="text-section">
+                <!-- text content goes here -->
+                <h1 class="animated-text">Railways Absorb Colonial Monetary Misadministration
+                </h1>
+                <p>
+                    “At the time the Mints were closed the silver bullion then in the hands of the people was depreciated as a 
+                    result of the fall in its value due to the closure. An agitation was set up by interested parties to compel the 
+                    Government to make good the loss. Ultimately, the Government was prevailed upon by Sir James Mackay (now Lord Inchcape), 
+                    the very man who forced Government to close the Mints, to take the silver from the banks. The Government 
+                    proposed to the Secretary of State that they be allowed to sell the silver even at a loss rather than coin and
+                     add to the already redundant volume of currency. The Secretary of State having refused, the silver was coined 
+                     and added to the currency. The stoppage of Council Bills in 1893-94 had temporarily accumulated a large number of 
+                     rupees in their Treasuries, a transaction which practically amounted to a contraction of currency. 
+                     But the Government later decided to 
+                    spend them on railway construction—a policy tantamount to an addition to currency.” (p. 213)
+                </p>
+            </div>
+            <div class="text-section">
+                <!-- text content goes here -->
+                <p>
+                    “During the first period of the Mint closure, 1893-98, it will be recalled how a large number of 
+                    rupees had accumulated in the hands of the Government, and in the interest of raising the value of the 
+                    rupee they should have been locked away. Instead the Government of India released that money in 
+                    circulation in extending railways and other public works, as though the spending of rupees by itself 
+                    produced an effect different to what would have been produced had they been spent by the public. 
+                    [This is an example of] irresponsible conduct.” (p. 229)
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------------------B FINAL TITAL SUMMARY---------------------------->
+     
+    <div class="section active left-aligned" id="section1">
+        <div class="title-container">
+            <h1 class="animated-text">Conclusion:</h1>
+        </div>
+        <div class="body-container">
+            <p>
+                By “excavating” and annotating Ambedkar's 1923 political economic thesis, Problem of the Rupee, 
+                for concepts like colonial “underdevelopment,” metropole-colony dynamics, surplus, exchange, exchange rates, etc., we 
+                traced the different intellectual networks <i>PoR</i> entered.
+
+                Thus, by situating Ambedkar as a political economist, recognizing his theorization of colonial political 
+                economy in PoR, and piecing together his various “immediate,” “alternate,” and “hybrid” interlocutors, we 
+                attempt to put three distinct “ideal-type” intellectuals who occupy the interwar moment and make “Atlantic 
+                crossings” in conversation with one another—the subaltern political economist theorizing from the peripheries (
+                geographic and intellectual) of empire; the colonial bureaucrat who embodies the “colonial gaze” and theorizes from the metropole, 
+                and the sui generis US university intellectual who is deeply imbricated in questions of translation, race, and eminent domain.
+            </p>
+        </div>
+    </div>
+                    
+    <!--------------------------------------END, USER ENTER ANNOTATION------------------------------------>
+    <div class="section active center-aligned">
+        <div class="content-container">
+            <div class="text-section">
+                <h3>What do YOU see? In the spirit of public annotation, enter a short annotation below if you'd like. </h1>
+            </div>
+            <div id="textContainer">
+                <p id="mainText">
+                    "[I]n 1907 the profits on rupees were actually employed in the extension of railways. It must fill 
+                    every one with horror and despair to contemplate the consequences sure to emanate from the manipulation of currency 
+                    for such ends. Is it not time this source of danger and temptation be removed by depriving the Government of this power to 
+                    manage the rupee currency? But what is the means of bringing this about? If it is desirable to do away with the management 
+                    then convertibility is an insufficient measure: for with convertibility the rupee will still remain a managed rupee. Only 
+                    the complete stoppage of rupee coinage will remove the governmental interference in the management of Indian currency; and 
+                    it is this that we must therefore ask for. Queer as it may seem, SAFETY LIES IN AN INCONVERTIBLE RUPEE WITH A FIXED LIMIT OF ISSUE."
+                    Ambedkar, <i>Problem of the Rupee</i>, 303.
+                </p>
+              </div>
+              
+              <div id="annotationForm">
+                <label for="phrase">Enter Phrase:</label>
+                <input type="text" id="phrase">
+              
+                <label for="color">Select Color:</label>
+                <input type="color" id="color">
+              
+                <label for="message">Enter Message:</label>
+                <input type="text" id="message">
+              
+                <button onclick="addCallout()">Enter</button>
+            </div>
+        </div>
+    </div>
+    <!----------------------------------------------- THE END ----------------------------------------------------->
+
+
+       <!-- Center-justified section -->
+    <div class="section active center-justified">
+        <h1 class="animated-text">Thank you!</h1>
+    </div>
+
+</body>
+</html>

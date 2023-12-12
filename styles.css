@@ -1,0 +1,537 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+/*********************************************************** BIO PAGE ***********************************************************/
+.image-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+
+.responsive-image {
+    width: 20%; /* Set a percentage width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the entire image is visible while maintaining aspect ratio */
+    transition: transform 0.5s ease-in-out;
+    margin: 10px; /* Add margin for spacing around each image */
+    filter: drop-shadow(20px 20px 10px gray);
+}
+
+/* Add hover effect if needed */
+.responsive-image:hover {
+    transform: scale(1.1);
+}
+
+/***************************************************** TEXT, IMAGE CONTAINER **********************************************************
+
+/* Styles for the content container */
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: left; /* Align text to the left */
+ }
+ 
+ 
+ /* Styles for the text section */
+ .text-section {
+    flex: 2; /* Occupy available space */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left; /* Align text to the left */
+ }
+ 
+ 
+ /* Styles for the text within the "Container div with text and image" section */
+ .text-section p {
+    font-size: 1.5vw; /* Set font size relative to viewport width */
+    margin: 1vh 0; /* Set margin relative to viewport height */
+ }
+
+
+ /* Styles for the text within the "Container div with text and image" section */
+ .text-section h1.animated-text {
+    font-size: 2.5vw;
+    margin: 1vh 0;
+    animation: textCascade 3s ease-out; /* Add animation here */
+ }
+
+ /* Styles for the text within the "Container div with text and image" section */
+ .text-section h5.animated-text {
+    font-size: 1.5vw;
+    margin: 1vh 0;
+    animation: textCascade 3s ease-out; /* Add animation here */
+ }
+ 
+ 
+ /* Styles for the image section */
+ .image-section {
+    flex: 1; /* Occupy available space */
+    padding: 20px;
+    box-sizing: border-box;
+ }
+ 
+ /* Additional styles for image-to-rectangle animation */
+.image-container {
+    width: 100%; /* new */
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+  }
+ 
+ /* Styles for the image */
+ .image {
+    display: block; /* new */
+    width: 100%;
+    max-height: calc(100vh - 40px); /* Set a maximum height for the image, considering padding of the sections */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the entire image is visible */
+ }
+
+ .text-overlay{
+    position: absolute;
+    background-color: red;
+    color: white;
+    opacity: 1;
+    height: 0;
+    transition: height 2s ease;
+    z-index: 1;
+ }
+
+/*********************************************************** BODY, H1-N, P ***********************************************************/
+h1 {
+    color: black;
+    font-size: 4vw; /* Set font size relative to viewport width */
+}
+
+h2 {
+    color: red;
+    font-size: 8vw;
+}
+
+h3{
+    color: black;
+    font-size: 2vw;
+}
+
+h4{
+    color: red;
+    width: 100%;
+    margin: 2rem 0;
+    padding: 20px;
+    overflow: hidden;
+}
+
+h5{
+
+        color: black;
+        font-size: 2vw; /* Set font size relative to viewport width */
+
+}
+
+p {
+    color: black;
+    width: 100%;
+    margin: 2rem 0;
+    padding: 20px;
+    overflow: hidden;
+}
+
+body {
+    background-color: #FAF9F6; 
+    /*background: linear-gradient(45deg, #5a9824, #335015, #e9e75a, #82823a); */
+    /*background: linear-gradient(45deg, #eaf8de, #eaf8de, #f5f4cc, #eaead7); */
+    background-size: 400% 400%; 
+    animation: gradientAnimation 10s ease infinite; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5vw; /* Set font size relative to viewport width */
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    color: black;
+    transition: background-color 5s ease-in-out;
+    box-sizing: border-box;
+}
+
+#blobs-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Add this style for the cursor tracking effect */
+#cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle closest-side, pink, transparent);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+  }
+
+/* Add this style for the gradient animation */
+@keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .special-title-container {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .static-text {
+    font-size: 5vw; /* Adjust the font size as needed */
+    color: black; /* Adjust the color as needed */
+    font-family: 'Arial', sans-serif; /* Adjust the font family as needed */
+  }
+
+  .rotating-text {
+    font-size: 5vw; /* Adjust the font size as needed */
+    color: #ff0000; /* Adjust the color as needed */
+    animation: rotateText 4s linear infinite;
+    font-family: 'Arial', sans-serif;
+  }
+
+  @keyframes rotateText {
+    0%, 20% {
+      transform: translateY(0);
+    }
+    25%, 45% {
+      transform: translateY(-30px);
+    }
+    50%, 70% {
+      transform: translateY(-60px);
+    }
+    75%, 95% {
+      transform: translateY(-90px);
+    }
+  }
+
+
+/*********************************************************** MEDIA QUERY FOR LARGER/SMALLER SCREENS ***********************************************************/
+@media screen and (min-width: 768px) {
+    /*.text-section p {
+        font-size: 1.5vw;
+    }
+
+    h1, h2 {
+        font-size: 3vw;
+    } */
+
+    body {
+        font-size: 1vw;
+    }
+}
+
+/* Media query for even larger screens */
+@media screen and (min-width: 1200px) {
+    /*.text-section p {
+        font-size: 1vw;
+    }
+
+    h1, h2 {
+        font-size: 2.5vw;
+    } */
+
+    body {
+        font-size: 0.8vw;
+    }
+}
+
+/*********************************************************** ANNOTATE ***********************************************************/
+.bannotate {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    line-height: 1.5;
+    vertical-align: middle;
+    z-index: 1; /* Stacking context */
+}
+
+.bannotate:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgb(35, 200, 32) 100%, transparent 50%);
+    animation-name: highlight;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    z-index: -1; /* Set a negative z-index to place it behind the text */
+}
+
+@keyframes highlight {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+    100% {
+        width: 100%;
+        opacity: 0.60;
+    }
+}
+
+.annotate {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    line-height: 1.5;
+    vertical-align: middle;
+    z-index: 1; /* Stacking context */
+}
+
+.annotate:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, red 100%, transparent 50%);
+    animation-name: highlight;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    z-index: -1; /* Set a negative z-index to place it behind the text */
+}
+
+@keyframes highlight {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+    100% {
+        width: 100%;
+        opacity: 0.60;
+    }
+}
+
+/********************************************************** SECTION CONTAINERS FOR KEYBOARD NAV ***********************************************************/
+
+.section {
+    height: 100vh; /* Adjust based on body padding */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center content horizontally and vertically */
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding is included in the total width/height */
+}
+
+.active {
+    /* background-color: #E8E5DA;   the active color class is to show keyboard nav functionality, remove later*/
+}
+
+.traditional{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.center-justified {
+    justify-content: center;
+    text-align: center; /* Center text horizontally */
+}
+
+/* Container for the title at the top left */
+.center-title-container {
+    padding: 20px;
+    box-sizing: border-box;
+    justify-self: center;
+    place-content: center;
+    margin: auto;
+    /* background-color: #F2F2F2; Adjust as needed */
+}
+
+.left-aligned {
+    flex-direction: row; /* Specifies how flex items are placed in the flex container, by setting the direction of the flex container's main axis. */
+    justify-content: flex-start;
+    text-align: left; /* Align text to the left */
+}
+
+/* Container for the title at the top left */
+.title-container {
+    padding: 20px;
+    box-sizing: border-box;
+    /* background-color: #F2F2F2; Adjust as needed */
+}
+
+/* Container for the body text below the title */
+.body-container {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #c1dff0; /* Adjust as needed */
+}
+
+.centering-container{
+    justify-self: center;
+    place-content: center;
+}
+
+/*************************************************************************** CALLOUT **************************************************************************/ 
+.callout {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.callout:hover .callout-text {
+    display: block;
+    z-index: 1;
+}
+
+.callout-text {
+    display: none;
+    position: absolute;
+    background-color:#90BE6D;
+    color: #fff;
+    padding: 6px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    white-space: nowrap;
+
+    /* The following styles  ensure visibility within the viewport */
+    max-width: 200%; /* CHANGD, PREV 100Set the maximum width to 100% of the viewport */
+    box-sizing: border-box; /* Include padding and border in the total width */
+    overflow: hidden; /* Hide any content that overflows the box */
+    white-space: normal; /* Allow text to wrap within the box */
+}
+
+/******************************************************************* TEXT CASCADE ANIMATION - TITLE ****************************************************************************/ 
+@keyframes textCascade {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animated-text {
+    animation: textCascade 2s ease-out;
+}
+
+/*********************************MOUSE HOVER BUTTON THING**************************/
+
+
+
+.mouse-cursor-gradient-tracking {
+    position: relative;
+    background: #7983ff;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+  }
+  
+  .mouse-cursor-gradient-tracking span {
+    position: relative;
+  }
+  
+  .mouse-cursor-gradient-tracking::before {
+    --size: 0;
+    content: '';
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    width: var(--size);
+    height: var(--size);
+    background: radial-gradient(circle closest-side, pink, transparent);
+    transform: translate(-50%, -50%);
+    transition: width 0.2s ease, height 0.2s ease;
+  }
+  
+  .mouse-cursor-gradient-tracking:hover::before {
+    --size: 200px;
+  }
+
+/****************************************************TEXT IMAGE TEXT ANIMATED CONTAINER******************************************************************/
+
+  #container2 {
+    display: flex;
+    height: 100vh;
+    overflow: hidden; /* Ensure content outside the container is hidden */
+  }
+
+  #text-container2,
+  #image-container2,
+  #new-text-container2 {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+  }
+
+  #text-container2,
+  #new-text-container2 {
+      background-color: #f0f0f0;
+      padding: 10px; /* Reduced padding */
+      word-wrap: break-word; /* Allow long words to break and wrap onto the next line */
+      overflow-wrap: break-word; /* Ensure that words break at the end of the line */
+      max-width: 80%; /* Set maximum width for better control */
+  }
+  
+  #text-container2 {
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+
+  #image-container2 {
+    background-color: #f0f0f0; /* Match the background color of text-container2 */
+    transform: translateX(100%); /* Start offscreen on the right */
+    transition: transform 0.5s ease-in-out;
+  }
+
+  #image-container2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+  }
+
+  #new-text-container2 {
+    background-color: #f0f0f0;
+    padding: 20px;
+    opacity: 0;
+    transform: translateX(100%); /* Start offscreen on the right */
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  }
+
+#text-container2 p,
+#new-text-container2 p {
+    margin-bottom: 10px; /* Adjusted bottom margin for paragraphs */
+}
+
+
+/*****************************************************IMAGE/TRANSCRIPTION ANIMATION*********************************/
